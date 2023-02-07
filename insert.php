@@ -15,7 +15,7 @@ $email = $_POST["email"];
 $actividades = $_POST["actividades"];
 $dataTime = date("Y-m-d H:i:s");
 //END--  save information in variable get the inputs 
-$sql = "INSERT INTO estudents(,tipoIdentificacion,numeroIdentificacion,lugarExpedicionDoc,nombre,apellidos,fechaNacimiento,edad,genero,direccion,telefono,email,actividades,fechaCreacionEst) VALUES ('$tipoIdentificacion','$numeroIdentificacion','$lugarExpedicionDoc','$nombre','$apellidos','$fechaNacimiento','$edad','$genero','$direccion','$telefono','$email','$actividades','$dataTime')";					
+$sql = "INSERT INTO estudents('',tipoIdentificacion,numeroIdentificacion,lugarExpedicionDoc,nombre,apellidos,fechaNacimiento,edad,genero,direccion,telefono,email,actividades,fechaCreacionEst) VALUES ('$tipoIdentificacion','$numeroIdentificacion','$lugarExpedicionDoc','$nombre','$apellidos','$fechaNacimiento','$edad','$genero','$direccion','$telefono','$email','$actividades','$dataTime')";					
 $result=mysqli_query($conexion,$sql);
 
 if($result){
