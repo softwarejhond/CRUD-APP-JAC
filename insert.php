@@ -1,5 +1,5 @@
 <?php
-$conexion=mysqli_connect("157.90.91.29","agenciae","q294g.#PwM9SYy","agenciae_cartasJAC");
+include 'conexion.php';
 //START--  save information in variable get the inputs 
 $tipoIdentificacion = $_POST["tipoIdentificacion"];
 $numeroIdentificacion = $_POST["numeroIdentificacion"];
